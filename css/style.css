@@ -18,68 +18,88 @@ body {
 }
 
 /* HEADER*/
-
 header {
+    display: flex;
+    width: 100%;
+    column-gap: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+/* header { en las queris
     background-image: url(../assets/img/fondo4.png);
     background-repeat: no-repeat;
     background-position: center;
     position: sticky;
     top: 1.3em;
     opacity: 0.8;
-}
-
-header nav img {
+} */
+/* header div img {
     margin: 0em 1em;
     opacity: 0.5;
+} */
+
+/* .modelarIdeas { 
+    color: black;
+    font-size: 1em;
+
 }
 
-.modelarIdeas { 
-    margin: 0em 1em;
+.arqDiseno p {
     color: black;
-    font-size: 1.3em;
-
-}
-
-.arqDiseno {
-    color: black;
-    font-size:  1em;
+    font-size: 1em;
     font-style:italic;
-    margin: 0.5em 1em; 
+    margin-left: 1em;
+} */
+
+/* nav{ en las queris
+    width: 63%;
+} */
+
+.navBar{
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 40px;
 }
 
-/* Lista del nav*/
-header nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-header nav a {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-}
-header nav ul {
-    display: flex;  
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
+.navBar li {
+    /* margin: 1.5em; */
     list-style-type: none;
 }
 
-header nav ul li {
-    margin: 1.5em;
-}
-
-header nav ul li a { 
+.navBar li a{ 
     text-decoration: none; 
     color: black; 
     transition: all 400ms ease;
 }
 
-header nav ul li a:hover {
+.navBar li a:hover {
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
 }
+
+
+/* Lista del nav*/
+/* header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+} */
+/* header nav a {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+} */
+/* header nav ul {
+    display: flex;  
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    list-style-type: none;
+} */
+
+
 
 /*MAIN*/
 
@@ -98,16 +118,25 @@ header nav ul li a:hover {
 }
 .flexContainer {
     display: flex;
-    flex-direction: row;  
+    /* flex-direction: row;   */
+    flex-wrap: wrap;
     text-align: center;
     margin-top: 3em;
 }
+.flexContainer div {
+    width: 43%;
+}
 
-.flexContainer article p {
+.portfolio {
+    padding-left: 5em;
+}
+.servicios {
+    padding-right: 5em;
+}
+.flexContainer div p {
     color: grey;
     font-weight: 400;
 }
-
 
 .estiloTitulo {
     font-size: 2em;
@@ -115,7 +144,7 @@ header nav ul li a:hover {
 
 .ingresoSecciones {
     border-radius: 10%; 
-    width: 35%;
+    width: 40%;
     box-shadow: 0 6px 10px 0 grey;    
 }
 
@@ -124,9 +153,16 @@ header nav ul li a:hover {
 }
 
 .carrousel {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    text-align: center;
+}
+
+.carrousel img{
     width: 60%;
     border-radius: 70px;
-    margin:3em 15em 1.3em ;
+    margin: 3em 0;
 }
 
 .wppFixed {
@@ -147,63 +183,70 @@ header nav ul li a:hover {
 a {
     color: black;
     text-decoration: none;
-
 }
 
 
 /*Footer*/
 
 footer {
+    /* width: 100%; */
     display: flex;
-    justify-content:space-evenly;
+    flex-wrap: wrap;
+    justify-content:space-around;
     align-items: center;
     background: rgb(196, 195, 195);
-
 }
 
+.copyrigth {
+    font-size: 1em;
+}
+
+footer div a {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
 footer div a p{
     margin-left: 0.2em;
 }
-footer div a {
-    display: flex;
-    align-items: center;
-    margin-right: 10em;
-    
-}
-footer img{
-    margin: 1em;
-    align-items: center;
-    margin: 0 10em 0 10em;
-}
-.copyrigth {
-    font-size: 0.8em;
-    
-}
+
 
 /*---------------------------------------------------------------- CSS SOBRE MI */
 
-.fondo article {
+.flexMi {
     background:whitesmoke;
     display: flex;  
+    flex-wrap: wrap;
     flex-direction: row;
+    width: 100%;
     align-items: center;
 
 }
+.fotoTexto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    margin:2em 0 ;
+}
 
-.fondo article p {
-    text-align: center;
-    padding: 2em ;  
-    margin: 0 2em;
-    width: 50%;
+.textoUno{
+    box-shadow: 0 6px 10px 0 grey;
+    font-weight: 500;
+    font-size: 1.2em;
+    margin: 3em;
+    padding: 3em 1em;
+    text-align: center; 
+    width:35%;
 
 }
 
-.textoUno {
-    box-shadow: 0 6px 10px 0 grey;
-    padding: 2em 5em;
-    margin-right: 2em;
-    font-weight: 500;
-    font-size: 1.2em;
+
+.textoFoto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
 }
 
 .textoDos {
@@ -212,16 +255,23 @@ footer img{
     text-align: center;
     font-size: 1.5em;
     opacity: 0.8;
-    font-weight: 500;
+    font-weight: 500; 
+    /* width:500px;
+    height: 350px; */
+    margin: 2em;
+    padding: 2em;
+    box-sizing: border-box;
+    width: 29%;
 }
+
 span {
 font-style: italic;
 }
 
-.pantoneImg {
-    width: 100%;
+.yoTrabajo{
     margin: 2em;
     box-shadow: 0 6px 10px 0 grey;
+    width: 57%;
 }
 
 .zocalo img {
@@ -295,21 +345,17 @@ font-style: italic;
     align-items: center;
 }
 
-.columnaImg img {
-    width: 100%;
-    margin-left: 2em;
-
-}
-
 .gridTitulo h2 {
     text-align: center;
     font-size: 2em;
     margin-top: 1.5em;
 }
 
-/* article .columnaTexto {
-    justify-content: center;
-} */
+.columnaImg img {
+    width: 100%;
+    margin-left: 2em;
+}
+
 .columnaTexto p {
     font-size: 1.5em;
     text-align: center;
@@ -327,7 +373,7 @@ font-style: italic;
 }
 
 
-/* section h2 {
+/* section h2 {   lo hice con grid
     text-align: center;
     font-size: 2em;
     margin-top: 1.5em;
@@ -356,7 +402,7 @@ font-style: italic;
     color: white;
 } */
 
-.tituloVentajas h3 {
+.tituloVentaja {
     font-size: 1.5em;
     text-align: center;
     margin-top: 3em;
@@ -364,10 +410,12 @@ font-style: italic;
 
 .textoVentajas {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .card {
-    width: 100%;
+    width: 400px;
     margin: 3em;
 
 }
@@ -487,8 +535,39 @@ font-style: italic;
 
 /* -------------------------------------------------------------- MOBILE */
 @media screen and (min-width: 320px) and (max-width: 767px) {
+        /* GENERAL */
+        
+        /* INDEX */
+        /* NAVBAR */
+    nav{
+        width: 100%;
+        font-size: 0.6em;
+        justify-content: center;
+        margin-top: 0.5em;
+        margin-right: 1em;
+}
+    header {
+        background-color: #d6b385;
+        opacity: 0.7;
+    }
+    header div img {
+        margin-top: 3em;
+        margin: 0em 0.5em;
+        width: 100px;
+    }
+    .modelarIdeas { 
+        color: black;
+        font-size: 0.9em;
+    }
+    .arqDiseno p {
+        color: black;
+        font-size: 1em;
+        font-style:italic;
+        margin-left: 7em;
+    }
+
     
-    /* CONTACTO */
+        /* CONTACTO */
 
     .flexForm {
         flex-direction: row;
@@ -503,16 +582,16 @@ font-style: italic;
     }
 
     .imgContacto {
-        width: 90%;
+        width: 100%;
         border-radius: 1000Px 0 0 0;
         margin-top: 2em;
-        margin-left: 0.7em;
-        
     }
+
+
 }
 
 /* -------------------------------------------------------------- TABLET */
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
 
         /* CONTACTO */
     .flexForm {
@@ -529,28 +608,56 @@ font-style: italic;
     }
     
     .imgContacto {
-        width: 85%;
+        width: 100%;
         border-radius: 1000Px 0 0 0;
         margin-top: 2em;
         margin-left: 0.7em;
             
     }
 	
-
-
-
-
 }
 
 
-
-
-
-
 /* -------------------------------------------------------------- DESKTOP */
-@media screen and (min-width: 1200px){
+@media screen and (min-width: 1024px){
 
-/* CONTACTO */
+        /* GENERAL */
+        /* INDEX */
+
+        /* NAVBAR */    
+    header {
+        background-image: url(../assets/img/fondo4.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        position: sticky;
+        top: 1.3em;
+        opacity: 0.8;
+    }
+    header div img {
+        margin: 0em 1em;
+        opacity: 0.5;
+        width: 100px;
+        height: 100px;
+    }
+    nav{
+        width: 63%;
+    }
+
+    .modelarIdeas { 
+        color: black;
+        font-size: 1em;
+    
+    }
+    
+    .arqDiseno p {
+        color: black;
+        font-size: 1em;
+        font-style:italic;
+        margin-left: 1em;
+    }
+
+
+        /* CONTACTO */
 
     .flexForm {
         flex-direction: row;
