@@ -3,18 +3,32 @@
 *{
     margin: 0;
 	padding: 0;
+    color: black;
+}
+*, ::after, ::before {
+    box-sizing: content-box;
 }
 @font-face {
     font-family: "bod_cr";
     src: url(../fonts/bod_cr.ttf);
 }
 html {
-    font-family:bod_cr;
+    font-family:bod_cr; 
     font-weight: 900;
-    font-size: 1.3em;
+    font-size: 1.3em; 
 }
 body {
     background: whitesmoke;
+    font-family:bod_cr; 
+    font-weight: 900;
+}
+
+p { 
+    margin-bottom: 0;
+}
+
+img, svg {
+    vertical-align: 0;
 }
 
 /* HEADER*/
@@ -32,8 +46,17 @@ header div img {
 .modelarIdeas { 
     color: black;
 }
+.modelarIdeas h1 {
+    font-size: 2em;
+    margin-bottom: 0;
+    line-height: 0;
+    font-weight: 900;
+    color: black;
+}
 .navBar{
     display: flex;
+    /* line-height: 0; */
+    margin-bottom: 0;
 }
 .navBar li {
     list-style-type: none;
@@ -63,6 +86,12 @@ header div img {
     flex-wrap: wrap;
     text-align: center;
 }
+.flexContainer div h2{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 900;
+    line-height: 1.2;
+}
 
 .estiloTitulo {
     font-size: 2em;
@@ -77,7 +106,7 @@ header div img {
     border-radius: 10%;
     box-shadow: 0 6px 10px 0 grey;    
 }
-.carrousel {
+.carousel {
     text-align: center;
 }
 a {
@@ -94,18 +123,34 @@ footer {
     justify-content:space-around;
     align-items: center;
     background: rgb(196, 195, 195);
+    
 }
 footer div a img{
     width: 100px;
     height: 100px;
 }
+footer div h4 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 900;
+    line-height: 0.8;
+    font-size: 1em;
+}
+footer div{
+    color: black; 
+}
 footer div a {
     display: flex;
     justify-content: center;
-    align-items: center;    
+    align-items: center;   
+    
 }
 footer div a p{
     margin-left: 0.2em;
+    color: black; 
+}
+footer div a svg{
+    color: black; 
 }
 
 
@@ -129,6 +174,7 @@ footer div a p{
     font-weight: 500;
     text-align: center;
     font-size: 1.2em;
+    line-height:1.1em;
 }
 .textoFoto {
     display: flex;
@@ -144,7 +190,7 @@ footer div a p{
     font-weight: 500; 
     font-size: 1.5em;
 }
-span {
+strong {
 font-style: italic;
 }
 .yoTrabajo{
@@ -173,8 +219,11 @@ font-style: italic;
 .flexPortfolio article div h3 {
     font-style: italic;
     text-align: center;
-    padding-bottom: 1em;
+    padding: 1em 0;
     font-size: 2em;
+    font-weight: 900;
+    line-height: 0;
+
 }
 .flexPortfolio article div p{
     color: grey;
@@ -207,6 +256,7 @@ font-style: italic;
 .gridTitulo h2 {
     text-align: center;
     font-size: 2em;
+    font-weight: 900;
 }
 
 .columnaImg img {
@@ -227,10 +277,14 @@ font-style: italic;
     color: white;
     font-weight: 100;
 }
-
+.textoAbajo p strong{
+    font-weight: 900;
+    color: whitesmoke;
+}
 .tituloVentaja {
     font-size: 1.5em;
     text-align: center;
+    font-weight: 900;
 }
 
 .textoVentajas {
@@ -239,12 +293,12 @@ font-style: italic;
     justify-content: space-around;
 }
 
-.card div img {
+.tarjeta div img {
     width: 30%;
     margin-bottom: 1em;
 }
 
-.card p {
+.tarjeta p {
     text-align: center;
 }
 
@@ -256,6 +310,7 @@ font-style: italic;
 .tips h4 {
     text-align: center;
     font-size: 2em;
+    font-weight: 900;
 }
 
 .tips img {
@@ -279,6 +334,8 @@ font-style: italic;
 .edicionForm h2{
     text-align: center;
     font-size: 2em;
+    font-weight: 900;
+    
 }
 .imgContacto {
     border-radius: 1000Px 0 0 0;
@@ -287,6 +344,11 @@ font-style: italic;
 .edicionForm div {
     line-height: 1.6;
     margin-bottom: 0.2em;
+}
+.edicionH3 div h3 {
+    font-weight: 900;
+    margin-bottom: 0;
+    font-size: 1.2em;
 }
 
 .iconoWp {
@@ -316,12 +378,14 @@ font-style: italic;
     width: 100%;
     border:none;
     border-bottom: 2px solid black;  
+    background-color: whitesmoke;
 }
 
 .edicionForm form div textarea{
     font-size: 1.1em;
     font-family:bod_cr;
     width: 100%;
+    /* background-color: whitesmoke; */
 }
 
 .boton {
@@ -340,15 +404,30 @@ font-style: italic;
         /* INDEX */
         /* HEADER - NAVBAR */
 
-    header {
+    /* header {
         background-color: #d6b385;
         opacity: 0.6;
+    } */
+    header {
+        /* background-color: #d6b385; */
+        /* opacity: 0.6; */
+        /* justify-content: center; */
+        background-image: url(../assets/img/fondo4.png);
+        background-repeat: no-repeat;
+        background-position:top;
+        /* position: sticky;
+        top: 1.3em; */
+        opacity: 0.8;
+        /* column-gap: 10px; */
     }
     header div img {
-        margin: 0em 0.5em;
+        width: 80px;
+        height: 80px;
+        
     }
-    .modelarIdeas { 
-        font-size: 0.9em;
+    .modelarIdeas h1 { 
+        font-size: 1.5em;
+        margin-right: 0.5em;
     }
     .arqDiseno p {
         display: none;
@@ -356,13 +435,15 @@ font-style: italic;
     nav{
         width: 100%;
         font-size: 1em;
-        margin-top: 0.5em;
-        margin-bottom: 0.5em;
+        justify-content: center;
+        align-items: center;
+        /* margin-top: 0.5em; */
+        /* margin-bottom: 0.5em; */
     }
-    .navBar{
+    /* .navBar{
         column-gap: 15px;
         justify-content: center;
-    }
+    } */
 
         /*MAIN*/
 
@@ -386,10 +467,21 @@ font-style: italic;
     .ingresoSecciones {
         width: 80%;
     }
-    .carrousel img{
+    /* .carousel img{
         width: 90%;
         border-radius: 20px;
         margin: 0.5em;
+    } */
+    .carouselEstilo img{
+        width: 90%;
+        border-radius: 20px;
+        margin: 0.5em 0.8em 0.5em;
+    }
+    .carousel button{
+        width: 22%;
+    }
+    .carousel-indicators{
+        margin-left: 3em;
     }
     .wppFixed {
         display: none; 
@@ -457,11 +549,11 @@ font-style: italic;
     .tituloVentaja {
         margin-top: 0.5em;
     }
-    .card div img {
+    .tarjeta div img {
         margin-top: 2em;
         margin-left: 5.5em;
     }
-    .card p {
+    .tarjeta p {
         width: 90%;
         margin-left: 1em;
     }
@@ -489,34 +581,54 @@ font-style: italic;
         width: 100%;
         margin-top: 2em;
     }
+    /* bootstrap */
+
+    .navbar {
+        --bs-navbar-brand-margin-end: 0.17rem;
+        --bs-navbar-toggler-padding-y: 0.25rem;
+        --bs-navbar-toggler-padding-x: 0.25rem;
+    }
+    .navbar {
+        --bs-navbar-padding-y: 0rem;
+        --bs-navbar-brand-padding-y: 0rem;
+        --bs-navbar-brand-font-size: 0rem;
+    }
 
 }
 
 /* -------------------------------------------------------------- TABLET */
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
         /* INDEX */
         /* HEADER - NAVBAR */
 
     header {
-        background-color: #d6b385;
-        opacity: 0.6;
-        justify-content: space-evenly;
+        /* background-color: #d6b385; */
+        /* opacity: 0.6; */
+        /* justify-content: center; */
+        background-image: url(../assets/img/fondo4.png);
+        background-repeat: no-repeat;
+        background-position: top;
+        /* position: sticky;
+        top: 1.3em; */
+        opacity: 0.8;
+        /* column-gap: 10px; */
     }
     header div img {
         margin: 0em 0.5em;
     }
-    .modelarIdeas { 
-        font-size: 0.9em;
+    .modelarIdeas h1 { 
+        font-size: 2em;
     }
     .arqDiseno p {
-        display:none;
+        color: black;
+        font-size: 1em;
+        font-style:italic;
+        margin-left: 1em;
     }
     nav{
-        width: 50%;
+        width: 100%;
         font-size: 1em;
-        margin-top: 0.5em;
-        margin-bottom: 0.5em;
     }
     .navBar{
         column-gap: 25px;
@@ -542,11 +654,19 @@ font-style: italic;
     .ingresoSecciones {
         width: 80%;
     }
-    .carrousel img{
+
+    .carouselEstilo img{
         width: 90%;
         border-radius: 20px;
-        margin: 1.5em;
+        margin: 3em 2em 1em;
     }
+    .carousel button{
+        width: 16%;
+    }
+    .carousel-indicators{
+        margin-left: 6em;
+    }
+    
     .wppFixed {
         display: none; 
     }
@@ -557,6 +677,7 @@ font-style: italic;
 
     footer div a p{
         font-size: 1.3em;
+
     }
     .copyrigth {
         font-size: 1.2em;
@@ -619,14 +740,14 @@ font-style: italic;
     .tituloVentaja {
         margin-top: 0.5em;
     }
-    .card div img {
+    .tarjeta div img {
         margin-top: 2em;
         margin-left: 5.5em;
     }
-    .card {
+    .tarjeta {
         width: 300px;
     }
-    .card p {
+    .tarjeta p {
         width: 90%;
         margin-left: 1em;
     }
@@ -661,12 +782,25 @@ font-style: italic;
         margin-top: 2em;
         margin-left: 0.7em; 
     }
+        /* bootstrap  ver el tamaño del logo*/
+
+        .navbar {
+            --bs-navbar-brand-margin-end: 0.17rem;
+            --bs-navbar-toggler-padding-y: 0.25rem;
+            --bs-navbar-toggler-padding-x: 0.25rem;
+        }
+        .navbar {
+            --bs-navbar-padding-y: 0rem;
+            --bs-navbar-brand-padding-y: 0rem;
+            --bs-navbar-brand-font-size: 0rem;
+        }
+
 	
 }
 
 
 /* -------------------------------------------------------------- DESKTOP */
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 1200px){
 
         /* GENERAL */
         /* INDEX */
@@ -682,11 +816,8 @@ font-style: italic;
         column-gap: 10px;
     }
     header div img {
-        margin: 0em 1em;
+        /* margin: 0em 1em; */
         opacity: 0.5;
-    }
-    .modelarIdeas {
-        font-size: 1em;
     }
     .arqDiseno p {
         color: black;
@@ -695,11 +826,13 @@ font-style: italic;
         margin-left: 1em;
     }
     nav{
-        width: 63%;
+        width: 97%;
     }
     .navBar{
         column-gap: 40px;
         justify-content: flex-end;
+        /* line-height: 0; */
+        
     }
 
         /* MAIN */
@@ -721,6 +854,7 @@ font-style: italic;
     }
     .ingresoSecciones {
         width: 40%;   
+        box-sizing: content-box;
     }
     .ingresoSecciones:hover {
         transform: translateY(-3%);
@@ -728,10 +862,20 @@ font-style: italic;
     .flexContainer div {
         width: 43%;
     }
-    .carrousel img{
-        width: 60%;
+    .carousel div {
+        width: 98%;
+    }
+    .carousel button{
+        width: 30%;
+    }
+    .carousel-indicators{
+        margin-left: 1em;
+    }
+    
+    .carouselEstilo img{
+        width: 80%;
         border-radius: 70px;
-        margin: 3em 0;
+        margin: 3em 9em 1em;
     }
     .wppFixed {
         background-color: #4ecc5c ;
@@ -801,11 +945,11 @@ font-style: italic;
     .tituloVentaja {
         margin-top: 3em;
     }
-    .card {
+    .tarjeta {
         margin: 3em;
         width: 400px;      
     }
-    .card div img {
+    .tarjeta div img {
         margin-left: 7em;
     }
     .queIncluye img {
@@ -823,7 +967,18 @@ font-style: italic;
         margin-bottom: 0.8em;   
     }
     .imgContacto {
+        height: 100vh;
         width: 78%;
     }
+
+    /* Bootstrap */
+    .navbar {
+        --bs-navbar-padding-y: 0rem;
+        --bs-navbar-brand-padding-y: 0rem;
+        --bs-navbar-brand-font-size: 0rem;
+    }
+
+
+
 }
 
