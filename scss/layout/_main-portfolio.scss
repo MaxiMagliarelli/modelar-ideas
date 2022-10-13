@@ -1,0 +1,33 @@
+/* PORTFOLIO-MAIN */
+.flexPortfolio article {
+    display: flex;
+    align-items: center;
+    margin: 1.4em 0 0 0;
+    img {
+        width: 80em;
+        height: 30em;
+        cursor: pointer;
+    }
+    div {
+        padding: 1.5em;
+        box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+        &:hover{
+            transform: translateY(-3%);
+        }
+        h3 {
+            font-style: italic;
+            text-align: center;
+            padding: 1em 0;
+            font-size: 2em;
+            font-weight: 900;
+            line-height: 0;
+        }
+        p{
+            color: grey;
+            font-weight: 100;
+            cursor: pointer;
+            text-align: center;
+        }
+    }
+
+}

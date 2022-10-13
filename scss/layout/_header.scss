@@ -1,0 +1,64 @@
+/* HEADER-NAV */
+header {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url(../assets/img/fondo4.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: sticky;
+    top: 1.3em;
+    opacity: 0.8;
+    column-gap: 10px;
+    div img {
+        width: 100px;
+        height: 100px;
+        opacity: 0.5;
+        margin-top: 0.5em;
+}
+}
+
+.modelarIdeas { 
+    color: black;
+    h1 {
+        font-size: 2em;
+        margin-bottom: 0;
+        line-height: 0;
+        font-weight: 900;
+        color: black;
+    }
+}
+.arqDiseno p {
+    color: black;
+    font-size: 1em;
+    font-style:italic;
+    margin-left: 1em;
+}
+.container-fluid {
+    padding-left: 1em;
+}
+nav{
+    width: 97%;
+}
+
+.navbar{
+    --bs-navbar-padding-y: 0rem;
+    --bs-navbar-brand-padding-y: 0rem;
+    --bs-navbar-brand-font-size: 0rem;
+}
+.navBar{
+    column-gap: 50px;
+    li {
+        list-style-type: none;
+        a{ 
+            text-decoration: none; 
+            color: black; 
+            transition: all 400ms ease;
+            &:hover {
+                box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+            }
+        }
+    }
+}

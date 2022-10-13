@@ -1,0 +1,51 @@
+
+/* SOBREMI-MAIN */
+.flexMi {
+    @include propiedadesFlex(row,wrap,none,center);
+    background:$backgroung-body;
+    width: 100%;
+
+}
+.fotoTexto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    margin:2em 1em ;
+}
+.textoUno{
+    box-shadow: $box-shadow;
+    font-weight: 500;
+    text-align: center;
+    font-size: 1.2em;
+    margin: 2em;
+    line-height:1.2em;
+    padding: 3.5em 1.5em;
+    width:35%;
+}
+.textoFoto {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+}
+.textoDos {
+    @extend .textoUno;
+    font-size: 1.5em;
+    padding: 2em;
+    box-sizing: border-box;
+    width: 29%;
+    background-color: #9daf89;
+    opacity: 0.8;
+}
+strong {
+    font-style: italic;
+    }
+.yoTrabajo{
+    box-shadow: $box-shadow;
+    margin: 2em;
+    width: 57%;
+}
+.zocalo img {
+    width: 100%;
+    opacity: 0.8;
+}

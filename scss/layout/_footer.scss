@@ -1,0 +1,29 @@
+/* FOOTER */
+footer {
+@include propiedadesFlex(row,wrap,space-around,center);
+    background: rgb(196, 195, 195);
+    div{
+        h4 {
+            margin-top: 0;
+            margin-bottom: 0;
+            font-weight: 900;
+            line-height: 0.8;
+            font-size: 1em;
+        }
+        a {
+            display: flex;
+            justify-content: center;
+            align-items: center;   
+            p{
+                margin-left: 0.2em;
+            }
+            img{
+                width: 100px;
+                height: 100px;
+            }
+        }
+    }
+}
+.copyrigth {
+    font-size: 1em;
+}

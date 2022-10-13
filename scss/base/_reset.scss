@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+	padding: 0;
+    color: black;
+}
+*, ::after, ::before {
+    box-sizing: content-box;
+}
+html {
+    font-family:bod_cr; 
+    font-size: 1.3em; 
+}
+body {
+    background: $backgroung-body;
+    font-family:bod_cr; 
+    font-weight: 900;
+    overflow-x: hidden;
+}
+
+p { 
+    margin-bottom: 0;
+}
+
+img, svg {
+    vertical-align: 0;
+}
+a {
+    color: black;
+    text-decoration: none;
+}

@@ -1,0 +1,81 @@
+/* INDEX-MAIN */
+.banner {
+    width: 100%;
+    margin-top: 1.3em;
+}
+.misionVision{
+    background-color: #d6b385;
+    color: whitesmoke;
+    text-align: center;
+    padding: 0.8em 0;
+    font-size: 1.8em;
+}
+.flexContainer {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-top: 3em;
+    div {
+        width: 43%;
+        h2{
+            margin-top: 0;
+            margin-bottom: 0;
+            font-weight: 900;
+            line-height: 1.2;
+        }
+        p {
+            color: grey;
+            font-weight: 400;
+        }
+    }    
+}
+.estiloTitulo {
+    font-size: 2em;
+}
+.portfolio {
+    padding-left: 5em;
+}
+.servicios {
+    padding-right: 5em;
+}
+.ingresoSecciones {
+    border-radius: 10%;
+    box-shadow: $box-shadow;
+    width: 40%;   
+    box-sizing: content-box; 
+    &:hover{
+        transform: translateY(-3%);        
+    }
+}
+.container-fluid{
+    --bs-gutter-x: 0em;
+}
+.carousel {
+    div {
+        width: 98%;
+    }
+    button{
+        width: 30%;
+        margin-right: 3.5em;
+    }
+}
+.carouselEstilo img{
+    width: 80%;
+    border-radius: 70px;
+    margin: 3em 7.5em 1em;
+}
+.carousel-indicators{
+    margin-left: 0em;
+}
+.wppFixed {
+    background-color: #4ecc5c ;
+    border-radius: 50%;
+    width: 3em;
+    height: 3em;
+    position: fixed;
+    bottom: 1.5em;
+    right: 2em;
+    &:hover {
+        transform: translateY(-10%);
+    }
+}
