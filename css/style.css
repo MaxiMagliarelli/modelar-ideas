@@ -48,6 +48,7 @@ header {
   background-repeat: no-repeat;
   background-position: center;
   position: sticky;
+  z-index: 1;
   top: 1.3em;
   opacity: 0.8;
   column-gap: 10px;
@@ -564,10 +565,10 @@ footer div a img {
   }
   .carousel button {
     width: 25%;
-    margin-right: 0.9em;
+    margin-right: 1.3em;
   }
   .carousel-indicators {
-    margin-left: 0em;
+    margin-left: -0.5em;
   }
   .wppFixed {
     display: none;
@@ -640,7 +641,7 @@ footer div a img {
   }
   .tarjeta div img {
     margin-top: 2em;
-    margin-left: 5.5em;
+    margin-left: 6.6em;
   }
   .queIncluye img {
     width: 100%;
@@ -649,10 +650,10 @@ footer div a img {
   }
   .tips img {
     width: 25%;
-    margin-left: 0.9em;
+    margin-left: 1em;
   }
   .bajoEscalera {
-    margin-left: 2.5em;
+    margin-left: 3em;
   }
   /* CONTACTO */
   .flexForm {
